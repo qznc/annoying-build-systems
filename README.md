@@ -26,6 +26,9 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 
 ### Gradle
 
+* Changes to `build.gradle` do not implicitly trigger rebuilds
+* If you do not know Groovy the syntax can be confusing
+
 ### Grunt
 
 ### Jam
@@ -33,7 +36,7 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 ### Make
 
 * [Recursive Make Considered Harmful](http://www.lateralt.net/files/auug97.pdf)
-* Changes to the Makefile to do not implicitly trigger rebuilds
+* Changes to the Makefile do not implicitly trigger rebuilds
 * Dependencies on directories is not really possible
 * Lots of output by default
 * Rules with multiple output files are not really possible
