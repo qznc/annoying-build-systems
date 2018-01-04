@@ -41,6 +41,9 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 ### Maven
 
 * Restricting [build lifecycle concept](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
+* Throws Null Pointer Exceptions and gives a stack trace for simple errors such as missing parameters
+* Verbose logs
+* Uses XML (possibly annoying), does not support XML attributes (annoying)
 
 ### Meson
 
@@ -51,6 +54,9 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 * Very low-level
 
 ### NPM
+
+* `npm install` [can be dangerous](https://github.com/joaojeronimo/rimrafall)
+* [Replicates transitive dependencies](https://lexi-lambda.github.io/blog/2016/08/24/understanding-the-npm-dependency-model/)
 
 ### Python Pip
 
@@ -63,6 +69,8 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 ### SBT
 
 * Very slow
+* Builds a directory tree on startup. If SBT is started in the `/` directory it [runs out of memory](https://github.com/sbt/sbt/issues/1458)
+* Uses a hard to understand [multilayered mutable execution model](http://www.lihaoyi.com/post/SowhatswrongwithSBT.html)
 
 ### Scons
 
