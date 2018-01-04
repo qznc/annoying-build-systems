@@ -85,7 +85,15 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 
 ### Scons
 
+* Too slow for larger projects ([source](https://www.reddit.com/r/programming/comments/gm1dy/stop_inventing_motherfucking_build_systems/c1okqt7/))
+
+## Shake
+
+* Requires Haskell (GHC)
+
 ### Shell Scripts
 
 * Hard to port
 * Hard to parallelize (thus slow)
+
+### Tup
