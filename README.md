@@ -10,6 +10,26 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 
 ## Builds Systems and their Annoyances
 
+### Ant
+
+* Looks like Make with XML syntax
+
+### Bazel
+
+### Buck
+
+### Cabal
+
+### CMake
+
+* Custom language
+
+### Gradle
+
+### Grunt
+
+### Jam
+
 ### Make
 
 * [Recursive Make Considered Harmful](http://www.lateralt.net/files/auug97.pdf)
@@ -18,8 +38,35 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 * Lots of output by default
 * Rules with multiple output files are not really possible
 
+### Maven
+
+* Restricting [build lifecycle concept](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
+
+### Meson
+
+### MS Build
+
+### Ninja
+
+* Very low-level
+
+### NPM
+
 ### Python Pip
 
 * The `requirements.txt` can either contain
   the (small) set of direct dependencies
   or the set of all (transitive) requirements for better repeatability.
+
+### Rake
+
+### SBT
+
+* Very slow
+
+### Scons
+
+### Shell Scripts
+
+* Hard to port
+* Hard to parallelize (thus slow)
