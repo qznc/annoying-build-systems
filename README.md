@@ -23,6 +23,8 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 ### CMake
 
 * Custom language
+* Lacking documentation
+* "so huge and bloated, compilation takes longer than compiling GCC (!). It’s not even possible to create freestanding Makefiles, since the generated Makefiles call back into the cmake binary itself." [source](https://suckless.org/sucks/)
 
 ### Gradle
 
@@ -33,13 +35,19 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 
 ### Jam
 
-### Make
+### Make alone
 
 * [Recursive Make Considered Harmful](http://www.lateralt.net/files/auug97.pdf)
 * Changes to the Makefile do not implicitly trigger rebuilds
 * Dependencies on directories is not really possible
 * Lots of output by default
 * Rules with multiple output files are not really possible
+
+### Make with Autotools
+
+* Obscure m4 macro language
+* Posix-only
+* Hard to debug because of generated code
 
 ### Maven
 
