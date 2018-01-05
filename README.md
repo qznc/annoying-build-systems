@@ -20,6 +20,10 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 
 ### Cabal
 
+### Cargo
+
+* Assumes build machine is networked; no obvious way to pre-download dependencies and have them be used
+
 ### CMake
 
 * Custom language
