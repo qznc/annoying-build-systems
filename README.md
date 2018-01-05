@@ -16,7 +16,11 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 
 ### Bazel
 
+* Can not have external dependencies
+
 ### Buck
+
+* Can not have external dependencies
 
 ### Cabal
 
@@ -35,6 +39,10 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 * Changes to `build.gradle` do not implicitly trigger rebuilds
 * If you do not know Groovy the syntax can be confusing
 
+### Gyp
+
+* JSON syntax with condition code as strings
+
 ### Grunt
 
 ### Jam
@@ -46,12 +54,14 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 * Dependencies on directories is not really possible
 * Lots of output by default
 * Rules with multiple output files are not really possible
+* [can't handle spaces in pathnames](https://savannah.gnu.org/bugs/?712)
 
 ### Make with Autotools
 
 * Obscure m4 macro language
 * Posix-only
 * Hard to debug because of generated code
+* [Configure does many unnecessary checks](https://varnish-cache.org/docs/2.1/phk/autocrap.html)
 
 ### Maven
 
@@ -67,11 +77,18 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 ### Ninja
 
 * Very low-level
+* All goals are treated as files (no equivalent to Make's PHONY)
 
 ### NPM
 
 * `npm install` [can be dangerous](https://github.com/joaojeronimo/rimrafall)
 * [Replicates transitive dependencies](https://lexi-lambda.github.io/blog/2016/08/24/understanding-the-npm-dependency-model/)
+* No way to specify test-only, build-only, debug-only, or CI-only dependencies ([source](https://lobste.rs/s/5ms7mb/what_is_annoying_about_certain_build#c_rl6qct))
+* Native add-ons make artifacts non-portable
+
+### Pants
+
+* Can not have external dependencies
 
 ### Python Pip
 
@@ -86,6 +103,9 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 * Very slow
 * Builds a directory tree on startup. If SBT is started in the `/` directory it [runs out of memory](https://github.com/sbt/sbt/issues/1458)
 * Uses a hard to understand [multilayered mutable execution model](http://www.lihaoyi.com/post/SowhatswrongwithSBT.html)
+  "The problems I discussed in this post are deep.
+  These aren't things you can 'just send a PR' or 'just help them fix it'.
+  They are fundamental to what SBT is."
 
 ### Scons
 
@@ -101,3 +121,5 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 * Hard to parallelize (thus slow)
 
 ### Tup
+
+### Xmake
