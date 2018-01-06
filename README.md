@@ -123,3 +123,17 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 ### Tup
 
 ### Xmake
+
+### Yocto
+
+Yocto builds Linux distributions by invoking other build systems. It has many unique features:
+
+* To use it, you [must](http://www.yoctoproject.org/docs/current/ref-manual/ref-manual.html#structure-core-script) source a shellscript, breaking Fish compatibility.
+* Officially supported distros are [whitelisted](http://www.yoctoproject.org/docs/current/ref-manual/ref-manual.html#detailed-supported-distros): Its fakeroot implementation routinely breaks because Glibc is too new. Therefore, it must often be used in Docker or other containerization on unsupported distributions.
+* Compiling the wrong code: There is a setting of whether to compile the local or remote copy of each repository, but changing the setting is not in all cases respected before a clean build is made.
+* Flimsy developer essentials that regularly stop working: Yocto has a concept of a [devshell](http://www.openembedded.org/wiki/Devshell): This opens a *terminal* (of all things) with the build environment set up in the build directory of a particular repository (for building only that one). Getting this working through Docker or other containerization really *depends* (if you're not careful, it may attempt to start X in your container, which will hang your existing X). As if its interactions with your Linux desktop isn't surprising enough as it is: You may be working in Konsole in an X session … but the devshell window that pops up is a Gnome-terminal in Weston in a different VT.
+* If you try to work outside devshell: Pulling dependencies while building is a sure way to distract your edit-compile-debug cycle with unrelated breakages from elsewhere, as well as the occasional big change that takes ages to rebuild.
+* Bitbake recipes:
+  - Look like shellscripts with improper quoting. Disgust.
+  - Have their own variables that look like shell variables. Confusing & error prone.
+  - Use magically named flat variables instead of structured data. Requires disciplined adherence to documented best practices.
