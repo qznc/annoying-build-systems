@@ -34,6 +34,8 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 * Lacking documentation
 * "so huge and bloated, compilation takes longer than compiling GCC (!). It’s not even possible to create freestanding Makefiles, since the generated Makefiles call back into the cmake binary itself." [source](https://suckless.org/sucks/)
 
+### Fabricate
+
 ### Gradle
 
 * Changes to `build.gradle` do not implicitly trigger rebuilds
@@ -111,6 +113,7 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 ### Scons
 
 * Too slow for larger projects ([source](https://www.reddit.com/r/programming/comments/gm1dy/stop_inventing_motherfucking_build_systems/c1okqt7/))
+* [VariantDir is confusing](https://stackoverflow.com/a/1074587)
 
 ### Shake
 
