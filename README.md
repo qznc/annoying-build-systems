@@ -95,6 +95,8 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 
 ### Please
 
+* No Windows support
+
 ### Python Pip
 
 * The `requirements.txt` can either contain
