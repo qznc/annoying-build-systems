@@ -93,6 +93,8 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 
 * Can not have external dependencies
 
+### Please
+
 ### Python Pip
 
 * The `requirements.txt` can either contain
@@ -125,6 +127,8 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 * Hard to parallelize (thus slow)
 
 ### Tup
+
+### Waf
 
 ### Xmake
 
