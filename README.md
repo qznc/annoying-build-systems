@@ -103,6 +103,10 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
   the (small) set of direct dependencies
   or the set of all (transitive) requirements for better repeatability.
 
+### Redo
+
+* build rules spread across many files
+
 ### Rake
 
 ### SBT
@@ -129,6 +133,8 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 * Hard to parallelize (thus slow)
 
 ### Tup
+
+* Can not have external dependencies
 
 ### Waf
 
