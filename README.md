@@ -52,12 +52,7 @@ The Licence for this repo is [CC0](https://creativecommons.org/publicdomain/zero
 ### Make alone
 
 * [Recursive Make Considered Harmful](http://www.lateralt.net/files/auug97.pdf)
-* Changes to the Makefile do not implicitly trigger rebuilds
-* Dependencies on directories is not really possible
-* Lots of output by default
-* Rules with multiple output files are not really possible
 * [can't handle spaces in pathnames](https://savannah.gnu.org/bugs/?712)
-* Uses a POSIX/bash shell, which hurts portability
 
 ### Make with Autotools
 
